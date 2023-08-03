@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -8040,6 +8041,7 @@ blockquote {
     justify-self: center;
   }
 }
+
 @font-face {
   font-family: "Opensaucesans";
   src: url("https://assets.website-files.com/62e33fd54c15a6c76cac0d48/62e344b71147d940389e29c2_OpenSauceSans-Bold.ttf")
@@ -8079,4 +8081,16 @@ blockquote {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #mobile-only {
+    display: inline-block !important;
+  }
 }
